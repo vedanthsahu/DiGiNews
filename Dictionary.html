@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* .Meaning{
+        
+      } */
+    </style>
+    <title>Dictionary</title>
+  </head>
+  <body
+    style="
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: rgb(0, 0, 0);
+    "
+  >
+    <div>
+      <h1 style="font-family: cursive; color: rgb(0, 0, 0); text-align: center">
+        Dictionary..
+      </h1>
+      <br /><br />
+      <div style="text-align: center">
+        <input
+          type="text"
+          name="Word1"
+          id="Word1"
+          placeholder="Enter the Word.."
+          style="
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+            border: 1px solid blue;
+          "
+        /><br /><br />
+        <input
+          type="submit"
+          value="Click Me"
+          style="font-family: cursive"
+          id="SearchButton"
+          class="btn btn-dark"
+        />
+        <br /><br />
+      </div>
+    </div>
+    <hr />
+    <div class="result" id="result"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script src="./Dict.js"></script>
+  </body>
+</html>

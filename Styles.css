@@ -1,0 +1,224 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+  font-family: cursive;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: overlay;
+}
+.conatiner_1 {
+  overflow: hidden;
+  border: 2px solid blzck;
+}
+#breakingImg {
+  background-image: url("Breaking_News.jpeg");
+  height: 500px;
+  width: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.Main_data {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  border-right: 20px;
+}
+.page2 {
+  width: 100%;
+  background-color: white;
+  min-height: 100vh;
+  padding: 50px;
+}
+.page2 .news {
+  padding: 30px 0;
+  border-bottom: 1px solid black;
+}
+.page2 .news:last-child {
+  padding: 30px 0;
+  border-bottom: none;
+}
+.page2 .news > .title h2 {
+  font-size: 40px;
+  cursor: pointer;
+  display: inline;
+}
+.page2 .news > .title h2:hover {
+  text-decoration: underline;
+}
+.page2 .news .newsBox {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.page2 .news .newsBox .newsCard {
+  width: 300px;
+  margin: 10px;
+  height: 250px;
+}
+.page2 .news .newsBox .newsCard .img {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  background-image: url("ImageNotFound.jpg");
+  background-size: 180px;
+  border: 2px solid;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.page2 .news .newsBox .newsCard .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.page2 .news .newsBox .newsCard .text {
+  padding: 10px;
+}
+.page2 .news .newsBox .newsCard .text .title a {
+  text-decoration: none;
+}
+.page2 .news .newsBox .newsCard .text .title a p {
+  font-size: 15px;
+  color: black;
+  display: inline;
+  cursor: pointer;
+}
+.page2 .news .newsBox .newsCard .title a p:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.topHeadlines {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+.topHeadlines ::-webkit-scrollbar {
+  display: none;
+}
+.topHeadlines .left {
+  padding: 10px 30px;
+}
+.topHeadlines .left > .title {
+  font-size: 20px;
+  text-align: center;
+}
+.topHeadlines .left .img img {
+  width: 100%;
+  height: 100%;
+}
+.topHeadlines .left .text {
+  padding: 20px 15px 10px;
+}
+.topHeadlines .left .text .title a {
+  text-decoration: none;
+}
+.topHeadlines .left .text .title a h2 {
+  font-size: 20px;
+  color: black;
+  letter-spacing: 1px;
+  display: inline;
+  cursor: pointer;
+}
+.topHeadlines .left .text .title a h2:hover {
+  text-decoration: underline;
+}
+.topHeadlines .right {
+  width: 1005;
+  height: 500px;
+}
+.topHeadlines .right > .title {
+  font-size: 20px;
+  padding-top: 15px;
+  text-align: center;
+}
+.topHeadlines .right .topNews {
+  padding: 7px;
+  height: 85%;
+  border: 1px solid brown;
+  border-radius: 4px;
+  overflow-y: scroll;
+}
+
+.topHeadlines .right .topNews .news .text {
+  margin-inline: 10px;
+  display: flex;
+  align-items: center;
+}
+.topHeadlines .right .topNews .news .text .title a {
+  text-decoration: none;
+}
+.topHeadlines .right .topNews .news .text .title a p {
+  color: black;
+  display: inline;
+}
+.topHeadlines .right .topNews .news .text .title a p:hover {
+  text-decoration: underline;
+}
+
+.AB {
+  padding-top: 90px;
+  color: black;
+  text-align: center;
+  background-color: #3a8891;
+}
+.h11 {
+  background: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  text-align: center;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#Dict1 {
+  float: right;
+  margin-right: 150px;
+  margin-top: 120px;
+  padding-right: 70px;
+}
+.img-d {
+  border-radius: 1000px;
+  height: 250px;
+  width: 250px;
+  float: left;
+  position: relative;
+  right: 300px;
+  top: -100px;
+}
+
+::selection {
+  background-color: yellow;
+  color: green;
+}
+.frame2 {
+  height: "1500000px";
+  width: "20%";
+  padding-top: 50px;
+  float: right;
+  position: fixed;
+  display: inline;
+  overflow-y: scroll;
+}
+.maindata_1 {
+  text-align: center;
+  float: unset;
+  position: absolute;
+  left: 300px;
+}
