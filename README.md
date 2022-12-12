@@ -1,8 +1,8 @@
 # DiGiNews
 
 This is inspired by the thought that why we cant search and read at the same place.
-News is notoriously known for its twisted and fancy way of feed whih makes the people who read to imporve improve English
-So added a extra feature of searching word meanings with examples.
+News is notoriously known for its twisted and fancy way of feed which makes it hard for the people who read to improve English
+So an extra feature of searching word meanings with examples is added.
 
 
 
