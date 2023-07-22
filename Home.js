@@ -8,7 +8,7 @@ let techNews = document.querySelector("#techNews .newsBox");
 
 // fetching news data from a website providing api
 
-const apiKey = "e1d805cbffc043d5a63c76e2f484fd7b";
+const apiKey = "4a81bfc4b1bb474b9921e642ab5bb7b9";
 
 const fetchData = async (category, pageSize) => {
   const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&pageSize=${pageSize}&apiKey=${apiKey}`;
