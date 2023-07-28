@@ -33,4 +33,4 @@ Users can actively engage with the website by browsing news articles and utilizi
 DigiNews is an open-source project. As the creator of this display model, I have chosen to release it without any specific license or copyrights. I encourage developers and users to freely explore, use, and modify the codebase to suit their needs.
 
 ---
-*Note: As a display model, DigiNews does not have any proprietary restrictions. However, when you plan to deploy it or make it publicly available, you might want to consider choosing an appropriate open-source license that aligns with your preferences and project goals.*
+*Note: As a display model, DigiNews does not have any proprietary restrictions. However, when you plan to deploy it or make it publicly available, you might want to consider choosing an appropriate open-source license that aligns with your preferences and project goals. Do not forget to mention the credits for it.*
