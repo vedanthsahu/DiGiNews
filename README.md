@@ -19,6 +19,8 @@ DigiNews is a dynamic website designed to provide users with an enhanced news br
 ## Usage
 
 DigiNews aims to simplify the news browsing process for users, providing organized sections for various topics, top news, and breaking news. Users can explore articles accompanied by images and brief introductions, and by clicking on a news piece, they can access the full content. The like button allows users to personalize their news feed based on their preferences. Additionally, users can search for the meanings of unfamiliar words directly within the site using the search prompt.
+![Image](image.png)
+
 
 Please note that access to DigiNews is currently restricted during its development phase. Once deployed, users can access the website just like any other regular site through their web browsers.
 
