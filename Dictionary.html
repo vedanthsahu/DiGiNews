@@ -1,57 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
+
+  <!DOCTYPE html>
+  <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      /* .Meaning{
-        
-      } */
-    </style>
-    <title>Dictionary</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <style>
+          /* .Meaning{
+
+          } */
+      </style>
+      <title>Dictionary</title>
   </head>
-  <body
-    style="
-      background-size: cover;
-      background-repeat: no-repeat;
-      color: rgb(0, 0, 0);
-    "
-  >
-    <div>
-      <h1 style="font-family: cursive; color: rgb(0, 0, 0); text-align: center">
-        Dictionary..
-      </h1>
+  <body style="background-size: cover; background-repeat: no-repeat; color: rgb(0, 0, 0);">
+
+  <div>
+      <h1 style="font-family: cursive; color: rgb(0, 0, 0); text-align: center">Dictionary..</h1>
       <br /><br />
       <div style="text-align: center">
-        <input
-          type="text"
-          name="Word1"
-          id="Word1"
-          placeholder="Enter the Word.."
-          style="
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
-              sans-serif;
-            border: 1px solid blue;
-          "
-        /><br /><br />
-        <input
-          type="submit"
-          value="Click Me"
-          style="font-family: cursive"
-          id="SearchButton"
-          class="btn btn-dark"
-        />
-        <br /><br />
+          <input type="text" name="Word1" id="Word1" placeholder="Enter the Word.." style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border: 1px solid blue;" /><br /><br />
+          <input type="submit" value="Click Me" style="font-family: cursive" id="SearchButton" class="btn btn-dark" />
+          <br /><br />
       </div>
-    </div>
-    <hr />
-    <div class="result" id="result"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
-    <script src="./Dict.js"></script>
+  </div>
+  <hr />
+  <div class="result" id="result"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+  <script src="./Dict.js"></script>
+
+  <script>
+      document.addEventListener('mouseup', function () {
+          var selectedText = getSelectedText();
+          if (selectedText !== '') {
+              document.getElementById('Word1').value = selectedText;
+          }
+      });
+
+      function getSelectedText() {
+          var text = '';
+          if (window.getSelection) {
+              text = window.getSelection().toString();
+          } else if (document.selection && document.selection.type !== 'Control') {
+              text = document.selection.createRange().text;
+          }
+          return text;
+      }
+  </script>
+
+
+  <script>
+      document.addEventListener('mouseup', function () {
+          var selectedText = getSelectedText();
+          if (selectedText !== '') {
+              document.getElementById('Word1').value = selectedText;
+              handleClick();
+          }
+      });
+
+      function handleClick() {
+          var selectedWord = document.getElementById('Word1').value;
+          getMeaning(selectedWord);
+      }
+
+      function getSelectedText() {
+          var text = '';
+          if (window.getSelection) {
+              text = window.getSelection().toString();
+          } else if (document.selection && document.selection.type !== 'Control') {
+              text = document.selection.createRange().text;
+          }
+          return text.trim();
+      }
+
+      function getMeaning(word) {
+        
+          // Add your code here to fetch the meaning based on the selected word
+          // You can make an API call or use any method to retrieve the meaning
+          // Update the 'result' div with the meaning
+          var meaning = "Meaning of " + word + ": Sample meaning text";
+          document.getElementById('result').innerText = meaning;
+      }
+  </script>
+
   </body>
-</html>
+  </html>
